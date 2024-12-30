@@ -1,0 +1,3 @@
+.content__area {
+  height: calc(100vh - var(--navbar-height, 75px) - var(--footer-height, 75px));
+}

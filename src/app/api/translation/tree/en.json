@@ -1,0 +1,12 @@
+{
+  "client": {
+    "home": {
+      "hello": "Hello"
+    }
+  },
+  "server": {
+    "error": {
+      "not-found": "Not found"
+    }
+  }
+}

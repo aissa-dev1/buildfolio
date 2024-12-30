@@ -1,0 +1,12 @@
+{
+  "client": {
+    "home": {
+      "hello": "مرحبا"
+    }
+  },
+  "server": {
+    "error": {
+      "not-found": "غير موجود"
+    }
+  }
+}
