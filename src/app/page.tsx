@@ -14,9 +14,17 @@ export default function Home() {
         <P className="mb-8 text-gray-foreground">
           انشئ موقعك الشخصي الأن في دقائق.
         </P>
-        <Link href="/coming-soon">
-          <Button>اكتشف المزيد</Button>
-        </Link>
+        <div className="flex gap-sm">
+          <Link href="/coming-soon">
+            <Button>اكتشف المزيد</Button>
+          </Link>
+          <Link href="/sign-up">
+            <Button>انشاء حساب</Button>
+          </Link>
+          <Link href="/login">
+            <Button>تسجيل الدخول</Button>
+          </Link>
+        </div>
       </div>
       <Footer />
     </Bootstrap>
