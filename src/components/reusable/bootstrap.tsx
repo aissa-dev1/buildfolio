@@ -35,7 +35,7 @@ export default function Bootstrap({ children }: BootstrapProps) {
   if (bootstrapStore.loading) {
     return (
       <div
-        className="fixed inset-0 flex justify-center items-center bg-gray-100 z-50"
+        className="fixed inset-0 flex__center bg-background/10 z-50"
         role="alert"
         aria-live="assertive"
       >
@@ -56,7 +56,7 @@ export default function Bootstrap({ children }: BootstrapProps) {
   if (bootstrapStore.error) {
     return (
       <div
-        className="fixed inset-0 flex justify-center items-center bg-gray-100 text-destructive z-50"
+        className="fixed inset-0 flex__center bg-background/10 text-destructive z-50"
         role="alert"
       >
         <div className="text-center">
