@@ -7,23 +7,72 @@
 @tailwind utilities;
 
 :root {
-  --background: 217 40% 96%; /* light (white) */
-  --foreground: 0 0% 0%; /* black */
-  --gray-foreground: 0 0 60%; /* gray */
+  /* Background */
+  --background: 210 20% 98%; /* #f7f9fc - soft light gray */
+  --foreground: 210 10% 10%; /* #1a1a1a - near black for text */
 
-  --primary: 272.9 64.85% 46.86%; /* purple */
-  --primary-foreground: 0 0% 100%; /* white */
+  /* Gray Foreground */
+  --gray-foreground: 210 10% 50%; /* #7a7a7a - medium gray */
 
-  --secondary: 0 0% 100%; /* white */
-  --secondary-foreground: 0 0% 0%; /* black */
+  /* Primary */
+  --primary: 220 70% 55%; /* #4c76f0 - vibrant blue */
+  --primary-foreground: 0 0% 100%; /* #ffffff - white */
 
-  --destructive: 0 73% 51%; /* red */
-  --destructive-foreground: 0 0% 100%; /* white */
+  /* Secondary */
+  --secondary: 34 94% 58%; /* #ffa94d - warm orange */
+  --secondary-foreground: 210 10% 10%; /* #1a1a1a - near black */
 
-  --raduis: 6px;
+  /* Card */
+  --card: 0 0% 100%; /* #ffffff - pure white */
+  --card-foreground: 210 10% 10%; /* #1a1a1a - near black */
+
+  /* Destructive */
+  --destructive: 0 85% 60%; /* #f44336 - red */
+  --destructive-foreground: 0 0% 100%; /* #ffffff - white */
+
+  /* Borders and Accents */
+  --border: 210 15% 90%; /* #e1e5ea - light gray */
+  --accent: 34 85% 65%; /* #ffb96c - soft orange */
+
+  --radius: 6px;
 
   --navbar-height: 75px;
   --footer-height: 75px;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 2.5rem;
+
+  .dark {
+    /* Background */
+    --background: 210 20% 10%; /* #1a1a26 - dark navy */
+    --foreground: 0 0% 100%; /* #ffffff - white for text */
+
+    /* Gray Foreground */
+    --gray-foreground: 0 0% 70%; /* #b3b3b3 - medium gray */
+
+    /* Primary */
+    --primary: 220 70% 65%; /* #6a8df0 - soft blue */
+    --primary-foreground: 0 0% 10%; /* #1a1a1a - near black */
+
+    /* Secondary */
+    --secondary: 34 94% 50%; /* #ff944d - rich orange */
+    --secondary-foreground: 0 0% 100%; /* #ffffff - white */
+
+    /* Card */
+    --card: 210 20% 15%; /* #2a2a39 - dark gray-blue */
+    --card-foreground: 0 0% 100%; /* #ffffff - white */
+
+    /* Destructive */
+    --destructive: 0 85% 50%; /* #e53935 - dark red */
+    --destructive-foreground: 0 0% 100%; /* #ffffff - white */
+
+    /* Borders and Accents */
+    --border: 210 15% 25%; /* #40404d - dark gray */
+    --accent: 34 85% 55%; /* #ffa363 - soft orange */
+  }
 }
 
 ::selection {
@@ -36,4 +85,5 @@ body {
   color: hsl(var(--foreground));
   font-family: "Inter", serif;
   direction: rtl;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
