@@ -8,7 +8,7 @@ export default function NotFound() {
   return (
     <>
       <NavBar />
-      <div className="flex__center flex-col content__area">
+      <div className="flex__center flex-col text-center content__area">
         <H1 className="mb-4">لم يتم العثور على هذه الصفحة</H1>
         <P className="text-lg mb-8 text-gray-foreground">
           الصفحة التي تحاول الوصول لها غير موجودة.
