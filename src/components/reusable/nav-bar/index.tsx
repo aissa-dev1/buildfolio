@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Container from "../container";
 import { P } from "@/components/ui/typography";
-import ThemeSwitchButton from "./theme-switch-button";
+import ThemeSwitchButton from "../button/theme-switch";
 
-export default function NavBar() {
+export default function HomeNavBar() {
   return (
     <nav className="h-[var(--navbar-height)] flex__center w-full bg-primary text-primary-foreground py-4 shadow-sm">
       <Container className="flex justify-between items-center px-4">
