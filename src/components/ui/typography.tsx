@@ -2,15 +2,21 @@ import { cn } from "@/utils/cn";
 import { ComponentProps } from "react";
 
 export function H1({ className, ...rest }: ComponentProps<"h1">) {
-  return <h1 className={cn("text-5xl font-bold", className)} {...rest} />;
+  return (
+    <h1 className={cn("text-4xl sm:text-5xl font-bold", className)} {...rest} />
+  );
 }
 
 export function H2({ className, ...rest }: ComponentProps<"h2">) {
-  return <h2 className={cn("text-4xl font-bold", className)} {...rest} />;
+  return (
+    <h2 className={cn("text-3xl sm:text-4xl font-bold", className)} {...rest} />
+  );
 }
 
 export function H3({ className, ...rest }: ComponentProps<"h3">) {
-  return <h3 className={cn("text-2xl font-bold", className)} {...rest} />;
+  return (
+    <h3 className={cn("text-xl sm:text-2xl font-bold", className)} {...rest} />
+  );
 }
 
 interface PProps extends ComponentProps<"p"> {
@@ -18,9 +24,9 @@ interface PProps extends ComponentProps<"p"> {
 }
 
 const P_SIZES = {
-  sm: "text-sm",
-  md: "text-md",
-  lg: "text-lg",
+  sm: "text-xs sm:text-sm",
+  md: "text-sm sm:text-md",
+  lg: "text-md sm:text-lg",
 };
 
 export function P({ className, size, ...rest }: PProps) {
